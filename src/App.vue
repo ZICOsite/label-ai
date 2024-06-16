@@ -14,8 +14,9 @@ const image = ref(null);
 
 onMounted(() => {
   window.addEventListener("scroll", () => {
-    if (window.scrollY <= 1000)
+    if (window.scrollY >= 0 && window.scrollY <= 1000)
       image.value.style.transform = `scale(${100 + window.scrollY / 2}%)`;
+    else if (window.scrollY < 0) image.value.style.transform = `scale(1)`;
     if (window.innerWidth <= 680)
       image.value.style.transform = `scale(${100 + window.scrollY * 1.5}%)`;
   });

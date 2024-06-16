@@ -31,7 +31,6 @@ const menuToggler = ref(false)
 
 onMounted(() => {
   window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 580) {
       logoBlack.value.style.display = "none";
       logo.value.style.display = "block";
