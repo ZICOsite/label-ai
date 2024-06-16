@@ -1,0 +1,17 @@
+@import "./fonts.scss";
+@import "./root.scss";
+@import "./common.scss";
+
+// components
+@import "@/components/header/header.scss";
+@import "@/components/navbar/navbar.scss";
+@import "@/components/footer/footer.scss";
+// components
+
+// views
+@import "@/views/about/aboutView.scss";
+@import "@/views/ecosystem/ecosystemView.scss";
+@import "@/views/exchanges/exchangesView.scss";
+@import "@/views/partners/PartnersView.scss";
+@import "@/views/events/EventsView.scss";
+// views

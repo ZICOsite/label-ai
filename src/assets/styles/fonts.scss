@@ -1,0 +1,26 @@
+$SF: ("Heavy", 900), ("Bold", 700), ("SemiBold", 600), ("Medium", 500),
+  ("Regular", 400), ("Light", 200), ("Thin", 100);
+
+@each $name, $weight in $SF {
+  @font-face {
+    src: url(@/assets/fonts/SF_Pro_Display/SFProDisplay-#{$name}.woff2)
+      format("woff2");
+    font-family: "SF Pro Display";
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+$Sohne: ("Kraftig", 500), ("Extraleicht", 300);
+
+@each $name, $weight in $Sohne {
+  @font-face {
+    // src: url(@/assets/fonts/Test_Sohne/SohneBreit-#{$name}.woff2) format("woff2");
+    src: url(../fonts/Test_Sohne/Sohne-#{$name}.woff2) format("woff2");
+    font-family: "Sohne Breit";
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}

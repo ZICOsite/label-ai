@@ -1,0 +1,327 @@
+.ecosystem {
+  overflow: hidden;
+  background: #131414;
+
+  &__content {
+    background: #131414;
+    position: sticky;
+    top: 0;
+    height: 100dvh;
+    padding-top: clamp(110px, 5vw, 220px);
+
+    ._txt {
+      font-size: clamp(22px, 2vw, 40px);
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      color: #fff;
+    }
+
+    ._link {
+      color: #fff;
+      font-size: clamp(22px, 2vw, 40px);
+      font-weight: 700;
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      text-underline-offset: 8px;
+    }
+
+    ._btn {
+      max-width: 263px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    @media (width <= 850px) {
+      min-height: 100dvh;
+      height: auto;
+    }
+
+    .container {
+      display: flex;
+      gap: 30px 150px;
+
+      @media (width <= 1650px) {
+        gap: 30px 60px;
+      }
+
+      @media (width <= 680px) {
+        justify-content: center;
+      }
+    }
+
+    &-waves {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    &-image {
+      width: min(543px, 100%);
+      object-fit: contain;
+      object-position: top;
+
+      @media (width <= 1650px) {
+        width: min(300px, 100%);
+      }
+
+      @media (width <= 680px) {
+        position: absolute;
+        filter: blur(4px);
+        z-index: -1;
+      }
+    }
+
+    &-image_2 {
+      position: absolute;
+      top: -20%;
+      left: 40%;
+      z-index: -1;
+
+      @media (width <= 1140px) {
+        top: 0;
+        height: 100%;
+        object-fit: cover;
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    &-image_3 {
+      position: absolute;
+      bottom: -5%;
+      left: 30%;
+      z-index: -1;
+    }
+
+    &-desc {
+      display: flex;
+      flex-direction: column;
+    }
+
+    ._desc {
+      @media (width <= 1140px) {
+        background: rgb(190 190 190 / 29%);
+        backdrop-filter: blur(5px);
+        border-radius: 16px;
+        padding: 20px;
+      }
+    }
+
+    &-logo {
+      width: min(430px, 100%);
+      margin-bottom: 75px;
+    }
+
+    &-lic {
+      width: min(307px, 100%);
+      margin-bottom: 80px;
+    }
+
+    &-link {
+      margin: 0 0 40px 40px;
+
+      @media (width <= 1650px) {
+        margin-left: 0;
+      }
+    }
+
+    &-link_2 {
+      margin-bottom: 40px;
+    }
+
+    &-txt {
+      width: min(725px, 100%);
+      margin-bottom: 46px;
+
+      &:first-of-type {
+        margin-left: 100px;
+      }
+
+      &:last-of-type {
+        margin-left: 200px;
+      }
+
+      @media (width <= 1650px) {
+        margin-left: 0 !important;
+      }
+    }
+
+    &-txt_2 {
+      width: min(495px, 100%);
+      margin-bottom: 30px;
+    }
+
+    &-txt_3 {
+      width: min(582px, 100%);
+      margin-bottom: 55px;
+    }
+
+    &-txt_4 {
+      width: min(647px, 100%);
+      margin-bottom: 150px;
+    }
+
+    &-btn {
+      margin-left: auto;
+
+      @media (width <= 1650px) {
+        margin-left: 0;
+      }
+    }
+
+    &-title {
+      font-weight: 900;
+      font-size: clamp(32px, 5vw, 96px);
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      color: #fff;
+      margin-bottom: 45px;
+    }
+
+    ._desc2 {
+      width: 50%;
+      margin-left: auto;
+
+      @media (width <= 1140px) {
+        width: 100%;
+        margin: unset;
+      }
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 200px 0;
+
+    @media (width <= 414px) {
+        grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    background: #525252;
+    border-radius: var(--radius-30);
+    padding: 50px 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &-logo {
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      color: #fff;
+      margin-bottom: 32px;
+    }
+
+    ._logo {
+      width: min(196px, 100%);
+    }
+
+    &-title {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    &-subtitle {
+      font-weight: 200;
+      font-size: 24px;
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    &-btn {
+      max-width: 263px;
+      font-family: var(--secondary-font);
+      font-weight: 500;
+    }
+
+    &-lic {
+      margin-bottom: 40px;
+    }
+
+    &-app {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__future {
+    &-title {
+      font-weight: 300;
+      font-size: clamp(48px, 5vw, 96px);
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 33px 20px;
+
+      @media (width <= 1024px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-card {
+      border-radius: var(--radius-30);
+      background: #353535;
+      padding: 24px 48px 48px 38px;
+
+      @media (width <= 680px) {
+        padding: 24px;
+      }
+
+      &_title {
+        font-size: clamp(24px, 5vw, 40px);
+        line-height: 130%;
+        letter-spacing: -0.01em;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        background: radial-gradient(
+          155.26% 155.26% at 9.72% -15.28%,
+          rgb(78, 249, 131) 0%,
+          rgb(2, 228, 146) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgb(2, 228, 146);
+        text-underline-offset: 6px;
+        margin-bottom: 35px;
+      }
+    }
+
+    &-list {
+      padding-inline-start: 20px;
+      list-style: disc;
+    }
+
+    &-item {
+      font-size: clamp(20px, 5vw, 30px);
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      color: #fff;
+    }
+  }
+}

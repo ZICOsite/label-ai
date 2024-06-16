@@ -1,0 +1,126 @@
+.nav {
+  position: fixed;
+  top: 68px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    @media (width <= 1440px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    display: none;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 30px 86px;
+    flex-grow: 1;
+    justify-content: flex-end;
+    transition: 0.4s;
+
+    @media (width <= 1440px) {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #f0f0f2;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      justify-content: center;
+      transform: scale(0);
+
+      &.active {
+        transform: scale(1);
+      }
+    }
+
+    &-btn {
+      max-width: 263px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 25px;
+    border-radius: var(--radius-15);
+    background: #e3e3e5;
+    padding: 10px;
+
+    @media (width <= 1440px) {
+      flex-direction: column;
+      background: transparent;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    padding: 4px 9px;
+    transition: 0.4s;
+    border-radius: 9px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+
+    @media (width <= 1440px) {
+      font-size: 36px;
+    }
+
+    &:hover {
+      background: #d9d9d9;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @media (width <= 1440px) {
+      width: 100px;
+      height: 15px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      &.active {
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        background: #949494;
+        mix-blend-mode: difference;
+        width: 100%;
+        height: 2px;
+        transition: 0.4s;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        top: 10px;
+      }
+    }
+
+    @media (width <= 480px) {
+      width: 70px;
+    }
+  }
+}
