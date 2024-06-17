@@ -108,7 +108,7 @@ const futures = [
             TRACKS partnered with LG to become the first music dapp on TV
           </p>
           <img
-            src="@/assets/images/ecosystem/lic.svg"
+            src="@/assets/images/ecosystem/lic2.svg"
             alt=""
             class="ecosystem__content-lic"
           />
