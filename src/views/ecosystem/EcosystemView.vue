@@ -77,7 +77,7 @@ const futures = [
             The platform will let users register AI-generated tracks and earn
             profits
           </p>
-          <a href="#!" class="ecosystem__content-btn _btn btn"
+          <a href="https://play.google.com/store/apps/details?id=com.clesson.tracks" target="_blank" class="ecosystem__content-btn _btn btn"
             >Download the App <IconArrow direction="right" color="#000"
           /></a>
         </div>
@@ -112,7 +112,7 @@ const futures = [
             alt=""
             class="ecosystem__content-lic"
           />
-          <a href="#!" class="ecosystem__content-btn_2 _btn btn"
+          <a href="https://youtu.be/p0fVRGMuxr8?si=ANIoy9YGhAuzSyDG" target="_blank" class="ecosystem__content-btn_2 _btn btn"
             >More details <IconArrow direction="right" color="#000"
           /></a>
         </div>
@@ -143,8 +143,8 @@ const futures = [
             Signail translates voices, preserves timbre, and helps you meet
             international friends
           </p>
-          <a href="#!" class="ecosystem__content-btn_2 _btn btn"
-            >More details <IconArrow direction="right" color="#000"
+          <a href="https://play.google.com/store/apps/details?id=com.clesson.aichatting" class="ecosystem__content-btn_2 _btn btn"
+            >Download the App <IconArrow direction="right" color="#000"
           /></a>
         </div>
       </div>
@@ -166,8 +166,7 @@ const futures = [
             serving as the starting point
           </p>
           <a href="#!" class="ecosystem__content-btn_2 _btn btn"
-            >More details <IconArrow direction="right" color="#000"
-          /></a>
+            >Coming soon...</a>
         </div>
       </div>
     </div>
@@ -179,7 +178,7 @@ const futures = [
       />
       <div class="container">
         <div class="ecosystem__content-desc _desc">
-          <h2 class="ecosystem__content-title _title">Onboarding system</h2>
+          <h2 class="ecosystem__content-title _title">Onboarding System</h2>
           <a href="#!" class="ecosystem__content-link_2 _link">
             Validator / Publisher System
           </a>
@@ -229,9 +228,9 @@ const futures = [
             class="ecosystem__card-logo _logo"
           />
           <h3 class="ecosystem__card-title">
-            Stream Your Life's Soundtrack and Earn Rewards
+            No matter the language, you can make friends worldwide!
           </h3>
-          <p class="ecosystem__card-subtitle">Web 3 Music Streaming Platform</p>
+          <p class="ecosystem__card-subtitle">Groundbreaking AI Sound Social Network</p>
           <img
             src="@/assets/images/ecosystem/lic.svg"
             alt=""
@@ -246,17 +245,17 @@ const futures = [
         <div class="ecosystem__card">
           <p class="ecosystem__card-logo">SONIC AI</p>
           <h3 class="ecosystem__card-title">
-            Stream Your Life's Soundtrack and Earn Rewards
+            The starting point for users to directly engage as creators
           </h3>
-          <p class="ecosystem__card-subtitle">Web 3 Music Streaming Platform</p>
+          <p class="ecosystem__card-subtitle">AI Song Generation and NFT Minting</p>
           <a href="#!" class="ecosystem__card-btn btn">Coming soon...</a>
         </div>
         <div class="ecosystem__card">
-          <p class="ecosystem__card-logo">Onboarding system</p>
+          <p class="ecosystem__card-logo">Onboarding System</p>
           <h3 class="ecosystem__card-title">
-            Stream Your Life's Soundtrack and Earn Rewards
+            Register AI-generated content on platforms
           </h3>
-          <p class="ecosystem__card-subtitle">Web 3 Music Streaming Platform</p>
+          <p class="ecosystem__card-subtitle">Validator / Publisher System</p>
           <a href="#!" class="ecosystem__card-btn btn">Coming soon...</a>
         </div>
       </div>

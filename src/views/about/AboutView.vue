@@ -1,7 +1,19 @@
 <template>
   <section class="about" id="about">
     <div class="about__content">
-      <img src="@/assets/images/about/1.png" alt="" class="about__banner" />
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        id="backgroundVideo"
+        class="about__banner"
+      >
+        <source
+          src="@/assets/images/about/sphere.mp4"
+          type="video/mp4"
+        />
+      </video>
       <h2 class="about__title">
         LABEL AI revolutionizes the sound industry with AI and blockchain,
         featuring TRACKS and SignAil to enhance user experience and support

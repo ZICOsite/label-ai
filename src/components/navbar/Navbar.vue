@@ -15,7 +15,7 @@ const pages = [
     name: "Events",
   },
   {
-    path: "#!",
+    path: "https://label-bridge.multibaas.app/",
     name: "ETH-BSC Bridge",
   },
   {
@@ -57,7 +57,7 @@ onMounted(() => {
             <a :href="item.path" class="nav__link">{{ item.name }}</a>
           </li>
         </ul>
-        <a href="#!" class="nav__menu-btn btn"> Community </a>
+        <a href="https://linktr.ee/labelfoundation" class="nav__menu-btn btn"> Community </a>
       </div>
       <div class="nav__burger" :class="{'active': menuToggler}" @click="menuToggler = !menuToggler"></div>
     </div>
