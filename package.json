@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
     "swiper": "^11.1.4",
     "vue": "^3.4.21"
   },

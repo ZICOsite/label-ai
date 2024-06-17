@@ -14,13 +14,25 @@ import { onMounted, ref } from "vue";
 const image = ref(null);
 
 onMounted(() => {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY >= 0 && window.scrollY <= 1000)
-      image.value.style.transform = `scale(${100 + window.scrollY / 2}%)`;
-    else if (window.scrollY < 0) image.value.style.transform = `scale(1)`;
+  const lenis = new Lenis({
+    lerp: 0.08,
+    smoothWeel: true,
+  });
+
+  lenis.on("scroll", ({ scroll }) => {
+    if (scroll >= 0 && scroll <= 1000)
+      image.value.style.transform = `scale(${100 + scroll / 2}%)`;
+    else if (scroll < 0) image.value.style.transform = `scale(1)`;
     if (window.innerWidth <= 680)
       image.value.style.transform = `scale(${100 + window.scrollY * 1.5}%)`;
   });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 
   window.addEventListener("beforeunload", () => {
     window.scrollTo({
