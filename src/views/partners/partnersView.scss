@@ -22,17 +22,21 @@
   &__card {
     width: min(547px, 100%);
     background: #525252;
-    padding: clamp(80px, 5vw, 103px) 12px;
+    padding: 12px;
+    height: 236px;
     border-radius: var(--radius-15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &-title {
-      font-family: var(--secondary-font);
-      font-weight: 500;
-      font-size: clamp(36px, 5vw, 48px);
-      line-height: 130%;
-      letter-spacing: -0.01em;
-      text-align: center;
-      color: #fff;
-    }
+    // &-title {
+    //   font-family: var(--secondary-font);
+    //   font-weight: 500;
+    //   font-size: clamp(36px, 5vw, 48px);
+    //   line-height: 130%;
+    //   letter-spacing: -0.01em;
+    //   text-align: center;
+    //   color: #fff;
+    // }
   }
 }

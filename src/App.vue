@@ -1,4 +1,5 @@
 <script setup>
+import Preloader from "@/components/preloader/Preloader.vue";
 import Header from "@/components/header/Header.vue";
 import Navbar from "@/components/navbar/Navbar.vue";
 import Footer from "@/components/footer/Footer.vue";
@@ -31,6 +32,7 @@ onMounted(() => {
 
 <template>
   <div class="wrapper">
+    <Preloader />
     <img
       src="@/assets/images/Subtract.svg"
       alt="Subtract"

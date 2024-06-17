@@ -1,29 +1,56 @@
 <script setup>
+import {
+  ANKR,
+  Binance_Custody,
+  bitkeep,
+  bnb,
+  certik,
+  chainlink,
+  cmc,
+  DWFLabs,
+  eBest,
+  Galxe,
+  gate_io,
+  icetealabs,
+  IOST,
+  IPFS,
+  Lg,
+  pixelrealm,
+  messari,
+  mindfulness,
+  MoonPay,
+  nftstorage,
+  onto,
+  Polygon,
+  Solanium,
+  TaskOn,
+} from "@/helpers/images";
+
 const partners = [
-  "DWF Labs",
-  "LG Electronics",
-  "Pixel Realm",
-  "Binance Custody",
-  "BNB Chain",
-  "eBest",
-  "Polygon",
-  "MoonPay",
-  "Messari",
-  "Gate.io",
-  "Chainlink",
-  "Solanium",
-  "ONTO",
-  "BitKeep",
-  "Net.Storage",
-  "IOST",
-  "IceTea Labs",
-  "Mindfulness Capital",
-  "Galxe",
-  "ANKR",
-  "Certik",
-  "CoinMarketCap",
-  "IPFS",
-  "TaskOn",
+  ANKR,
+  Binance_Custody,
+  bitkeep,
+  bnb,
+  certik,
+  chainlink,
+  cmc,
+  DWFLabs,
+  eBest,
+  Galxe,
+  gate_io,
+  icetealabs,
+  IOST,
+  IPFS,
+  Lg,
+  pixelrealm,
+  messari,
+  mindfulness,
+  MoonPay,
+  nftstorage,
+  onto,
+  Polygon,
+  Solanium,
+  TaskOn,
 ];
 </script>
 
@@ -33,7 +60,7 @@ const partners = [
       <h2 class="partners__title">Partners</h2>
       <div class="partners__cards">
         <div class="partners__card" v-for="item in partners" :key="item">
-          <h3 class="partners__card-title">{{ item }}</h3>
+          <img :src="item" alt="" class="partners__card-logo">
         </div>
       </div>
     </div>
