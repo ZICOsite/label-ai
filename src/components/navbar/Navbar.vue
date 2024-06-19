@@ -46,7 +46,7 @@ onMounted(() => {
   <nav class="nav">
     <div class="container">
       <a href="#!" class="nav__logo" ref="logo"
-        ><img src="/public/logo.svg" alt=""
+        ><img src="/logo.svg" alt=""
       /></a>
       <a href="#!" class="nav__logo-black" ref="logoBlack"
         ><img src="@/assets/images/logo-black.svg" alt=""

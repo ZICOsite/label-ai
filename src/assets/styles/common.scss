@@ -47,7 +47,7 @@ textarea {
   transform: scale(100%);
   z-index: 10;
   pointer-events: none;
-  transition: 0.2s;
+  transform-style: preserve-3d;
 
   @media (width <= 1650px) {
     bottom: -15vw;
