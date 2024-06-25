@@ -3,23 +3,23 @@ import { onMounted, ref } from "vue";
 
 const pages = [
   {
-    path: "#!",
+    path: "#about",
     name: "About",
   },
   {
-    path: "#!",
-    name: "Ecosystem",
+    path: "#ecosystem",
+    name: "dApps",
   },
   {
-    path: "#!",
-    name: "Events",
+    path: "#news",
+    name: "News",
   },
   {
     path: "https://label-bridge.multibaas.app/",
     name: "ETH-BSC Bridge",
   },
   {
-    path: "#!",
+    path: "https://label-foundation.gitbook.io/label-whitepaper-en-2.0",
     name: "Git book",
   },
 ];
@@ -54,7 +54,7 @@ onMounted(() => {
       <div class="nav__menu" :class="{'active': menuToggler}">
         <ul class="nav__list">
           <li class="nav__item" v-for="item in pages" :key="item.name">
-            <a :href="item.path" class="nav__link">{{ item.name }}</a>
+            <a :href="item.path" class="nav__link" @click="lenis.scrollTo(item.path)">{{ item.name }}</a>
           </li>
         </ul>
         <a href="https://linktr.ee/labelfoundation" class="nav__menu-btn btn"> Community </a>

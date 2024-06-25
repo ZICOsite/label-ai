@@ -47,7 +47,7 @@ const futures = [
 </script>
 
 <template>
-  <section class="ecosystem">
+  <section class="ecosystem" id="ecosystem">
     <div class="ecosystem__content">
       <img
         src="@/assets/images/ecosystem/waves.png"
@@ -193,7 +193,7 @@ const futures = [
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" v-if="false">
       <div class="ecosystem__cards">
         <div class="ecosystem__card">
           <img

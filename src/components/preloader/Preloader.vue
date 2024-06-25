@@ -1,11 +1,13 @@
-<script setup></script>
+<script setup>
+import IconLogoPreloader from "@/components/icons/IconLogoPreloader.vue";
+</script>
 
 <template>
   <div class="preolader">
-    <img src="@/assets/images/preloader/preloader.svg" alt="" />
+    <IconLogoPreloader :width="579" :height="140"/>
     <div class="preolader__counter">
-        <span class="preolader__counter-span">%</span>
-        <p>Loading...</p>
+      <span class="preolader__counter-span">%</span>
+      <p>Loading...</p>
     </div>
   </div>
 </template>

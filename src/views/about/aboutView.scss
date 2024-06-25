@@ -2,8 +2,7 @@
   margin-top: -220px;
 
   &__content {
-    position: sticky;
-    top: 0;
+    position: relative;
     height: 100dvh;
     display: flex;
     align-items: center;
